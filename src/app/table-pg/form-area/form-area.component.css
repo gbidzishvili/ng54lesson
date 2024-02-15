@@ -1,0 +1,10 @@
+article {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+mat-form-field {
+  margin-bottom: 8px;
+  display: block;
+}

@@ -1,0 +1,27 @@
+<table class="table">
+  <button mat-raised-button color="primary" (click)="onSortBtnClick()">
+    sort
+  </button>
+  <button mat-raised-button color="primary" (click)="onResetnClick()">
+    Reset
+  </button>
+  <button mat-raised-button color="warn" (click)="onDescSortBtnClick()">
+    sort Desc
+  </button>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of personList; let i = index">
+      <th scope="row">{{ person.id }}</th>
+      <td>{{ person.fullName }}</td>
+      <td>{{ person.mail }}</td>
+      <td>{{ person.score }}</td>
+    </tr>
+  </tbody>
+</table>

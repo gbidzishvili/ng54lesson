@@ -1,0 +1,22 @@
+<article>
+  <mat-form-field class="example-full-width">
+    <mat-label>Full name</mat-label>
+    <input matInput [(ngModel)]="tempPerson.fullName" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="tempPerson.mail" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Score</mat-label>
+    <input matInput [(ngModel)]="tempPerson.score" type="number" />
+  </mat-form-field>
+  <button
+    (click)="onPersonInfoSubmitBtnClick()"
+    class="col-md-12"
+    mat-raised-button
+    color="primary"
+  >
+    Primary
+  </button>
+</article>
