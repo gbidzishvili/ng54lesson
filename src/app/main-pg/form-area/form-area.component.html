@@ -1,0 +1,19 @@
+<article>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter image URL</mat-label>
+    <input name="rame" [(ngModel)]="cardItem.imgSrc" matInput />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Enter Description</mat-label>
+    <input name="rame" [(ngModel)]="cardItem.description" matInput />
+  </mat-form-field>
+  <button
+    (click)="onSubmitBtnClick()"
+    class="d-block"
+    mat-raised-button
+    color="primary"
+  >
+    Submit
+  </button>
+</article>
